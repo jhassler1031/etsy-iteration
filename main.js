@@ -69,3 +69,11 @@ multiMaterialItems = items.filter(getMultiMaterialItem);
 multiMaterialItems.forEach(printMultiMaterialItems);
 
 // Problem 6 ===================================================================
+let selfMade = [];
+
+function getSelfMade(item) {
+  return item.who_made === "i_did";
+}
+
+selfMade = items.filter(getSelfMade);
+console.log(`${selfMade.length} were made by their sellers`);
