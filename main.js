@@ -34,3 +34,19 @@ function printGBPItems(item) {
 
 gbpArray = items.filter(filterByGBP)
 gbpArray.forEach(printGBPItems);
+
+// Problem 4 ===================================================================
+let woodArray = [];
+
+function getWood(item) {
+  return item.materials.indexOf("wood") !== -1;
+}
+
+function printWoodItem(item) {
+  console.log(`${item.title} is made of wood.`)
+}
+
+woodArray = items.filter(getWood);
+woodArray.forEach(printWoodItem);
+
+// Problem 5 ===================================================================
