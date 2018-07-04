@@ -50,3 +50,22 @@ woodArray = items.filter(getWood);
 woodArray.forEach(printWoodItem);
 
 // Problem 5 ===================================================================
+let multiMaterialItems = [];
+
+function getMultiMaterialItem(item) {
+  return item.materials.length > 7;
+}
+
+function printMaterials(item) {
+  console.log(item);
+}
+
+function printMultiMaterialItems(item) {
+  console.log(`${item.title} has ${item.materials.length} materials:`);
+  item.materials.forEach(printMaterials);
+}
+
+multiMaterialItems = items.filter(getMultiMaterialItem);
+multiMaterialItems.forEach(printMultiMaterialItems);
+
+// Problem 6 ===================================================================
